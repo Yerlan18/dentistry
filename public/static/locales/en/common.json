@@ -1,7 +1,18 @@
 {
-  "h1": "Стоматология",
-  "change-locale": "Change locale",
-  "to-second-page": "To second page",
-  "error-with-status": "A {{statusCode}} error occurred on server",
-  "error-without-status": "An error occurred on the server"
+  "header_top_link_1": "Стоматология",
+  "header_top_link_2": "Аренда оборудования",
+  "header_top_link_3": "Медицинская сертификация - unionp.kz",
+  "service_title": "Наши услуги",
+  "adv_title": "Наши преимущества",
+
+  "submenu_main": "Главная",
+  "submenu_services": "Услуги",
+  "submenu_about": "О нас",
+  "submenu_spec": "Специалисты",
+  "submenu_product": "Наша продукция",
+
+  "footer_price": "Цены",
+  "footer_working_hours": "Время работы",
+  "footer_working_hours_date1": "Пн-пт",
+  "footer_working_hours_date2": "Сб-вс"
 }

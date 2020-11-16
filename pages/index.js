@@ -20,7 +20,7 @@ function Home({t}) {
               </div>
           </section>
           <section id="service-main" className="service">
-              <div className="title">{t('h1')}</div>
+              <div className="title">{t('service_title')}</div>
               <div className="container px-sm-3 px-0">
                   <div className="row">
                       <div className="service-block">
@@ -105,7 +105,7 @@ function Home({t}) {
               </div>
           </section>
           <section id="advantages">
-              <div className="title">Наши преимущества</div>
+              <div className="title">{t('adv_title')}</div>
               <div className="adv">
                   <div className="container px-sm-3 px-0">
                       <div className="row mx-0">
@@ -224,7 +224,7 @@ function Home({t}) {
 }
 
 Home.getInitialProps = async () => ({
-    namespacesRequired: ['common', 'footer'],
+    namespacesRequired: ['common'],
 })
 
 Home.propTypes = {

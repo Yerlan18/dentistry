@@ -58,7 +58,7 @@ body {
   height: 100vh;
 }
 .container{
-  max-width: 1280px;
+  max-width: 1280px!important;
 }
 main{
   flex: 1 0 auto;
@@ -122,30 +122,33 @@ button{outline: none;}
         flex-direction: row;
         flex: 1 0 auto;
         justify-content: space-between;
-        .active{
-          color: #fff;
-          border-bottom: 3px solid $orange-color;
-          a{
+        .nav-item{
+          margin-right: .75rem;
+          .active{
             color: #fff;
-            cursor: default;
-          }
-        }
-        span{
-          display: block;
-          min-height: 46px;
-          width: fit-content;
-          width: -webkit-fit-content;
-          padding: .5rem 0;
-          &:hover{
             border-bottom: 3px solid $orange-color;
             a{
               color: #fff;
+              cursor: default;
             }
           }
-          a{
-            display: inline-flex;
-            color: #c8c8c8;
-            text-decoration: none;
+          span{
+            display: block;
+            min-height: 46px;
+            width: fit-content;
+            width: -webkit-fit-content;
+            padding: .5rem 0;
+            &:hover{
+              border-bottom: 3px solid $orange-color;
+              a{
+                color: #fff;
+              }
+            }
+            a{
+              display: inline-flex;
+              color: #c8c8c8;
+              text-decoration: none;
+            }
           }
         }
       }
@@ -168,13 +171,32 @@ button{outline: none;}
     }
     &__lang{
       margin-left: 150px;
-      .btn{
+      /*.btn{
         background-color: transparent !important;
         border: 0 !important;
         color: #c8c8c8 !important;
         padding: .5rem;
         &:hover{
           color: #fff;
+        }
+      }*/
+      #btn-lang{
+        display: flex;
+        button{
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          /*line-height: 1.5;
+          border-radius: .25rem;*/
+          border: 0;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        .is-active{
+          background-color: $orange-color;
+          color: #fff;
+          cursor: default;
+        }
+        @media screen and (max-width: 991px) {
+          flex-direction: column;
         }
       }
       .dropdown-menu{
@@ -188,6 +210,9 @@ button{outline: none;}
             color: #000;
           }
         }
+      }
+      @media screen and (max-width: 1024px) {
+        margin-left: 100px;
       }
       @media screen and (max-width: 602px) {
         margin-left: auto;
@@ -862,7 +887,7 @@ button{outline: none;}
 
 .photo-carousel{
   .BrainhubCarousel__container{
-    padding: 3rem 0.75rem 2rem;
+    padding: 3rem 0 2rem;
     .BrainhubCarouselItem{
       transition: transform .6s;
       img{
@@ -879,6 +904,10 @@ button{outline: none;}
           transform: scale(1) !important;
         }
       }
+    }
+    @media screen and (max-width: 576px) {
+      padding-left: .75rem;
+      padding-right: .75rem;
     }
   }
   .BrainhubCarousel__dots{
@@ -914,6 +943,9 @@ button{outline: none;}
       padding: 1rem 2rem;
       @media screen and (max-width: 768px) {
         padding: 1rem .5rem;
+      }
+      @media screen and (max-width: 576px) {
+        padding: 0!important;
       }
     }
     .caption{

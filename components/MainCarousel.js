@@ -47,8 +47,8 @@ export default class PhotoCarousel extends React.Component {
                     value={this.state.value}
                     slides={this.state.slides}
                     onChange={this.onchange}
-                    autoPlay={3000}
-                    animationSpeed={1500}
+                    /*autoPlay={3000}
+                    animationSpeed={1500}*/
                     centered
                     infinite
                     slidesPerPage={2}

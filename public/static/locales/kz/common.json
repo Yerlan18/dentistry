@@ -1,7 +1,18 @@
 {
-  "h1": "Тістерді емдеу",
-  "change-locale": "Change locale",
-  "to-second-page": "To second page",
-  "error-with-status": "A {{statusCode}} error occurred on server",
-  "error-without-status": "An error occurred on the server"
+  "header_top_link_1": "Тіс емдеу емханасы",
+  "header_top_link_2": "Жабдықты жалға алу",
+  "header_top_link_3": "Медициналық сертификация - unionp.kz",
+  "service_title": "Біздің қызметтер",
+  "adv_title": "Біздің артықшылығымыз",
+
+  "submenu_main": "Басты бет",
+  "submenu_services": "Қызметтер",
+  "submenu_about": "Біз туралы",
+  "submenu_spec": "Мамандар",
+  "submenu_product": "Біздің өнімдер",
+
+  "footer_price": "Бағалар",
+  "footer_working_hours": "Жұмыс уақыты",
+  "footer_working_hours_date1": "Дс-жм",
+  "footer_working_hours_date2": "Сб-жс"
 }
