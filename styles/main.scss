@@ -999,3 +999,63 @@ button{outline: none;}
     color: #f71f1f;
   }
 }
+
+.admin-wrapper{
+  display: flex;
+  height: 100vh;
+  main{
+    padding: 2rem;
+
+    .btn{
+      margin: 1rem 0;
+    }
+
+    .table{
+      td,th{
+        padding: .5rem;
+      }
+    }
+  }
+  #left-menu{
+    background-color: #3a4651;
+    display: block;
+    width: 230px;
+    height: 100vh;
+    border: 0;
+    ul{
+      display: flex;
+      flex-direction: column;
+      height: inherit;
+      list-style-type: none;
+      border-bottom: 15px solid #52bcd3;
+      margin: 0;
+      padding-left: 0;
+      padding-top: 2rem;
+      li{
+        &.active{
+          a{
+            background-color: #52bcd3!important;
+            color: #fff!important;
+            cursor: default;
+          }
+        }
+        a{
+          display: flex;
+          align-items: center;
+          color: rgba(255,255,255,.5);
+          text-decoration: none!important;
+          padding: 15px 20px;
+          &:hover{
+            color: #fff;
+            background-color: #2d363f;
+          }
+        }
+        &:last-child{
+          margin-top: auto;
+        }
+      }
+    }
+  }
+}
+
+
