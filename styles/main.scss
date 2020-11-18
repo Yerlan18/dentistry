@@ -886,6 +886,9 @@ button{outline: none;}
 }
 
 .photo-carousel{
+  .container{
+    max-width: 1400px !important;
+  }
   .BrainhubCarousel__container{
     padding: 3rem 0 2rem;
     .BrainhubCarouselItem{
@@ -934,6 +937,9 @@ button{outline: none;}
   }
 }
 #main-carousel{
+  .container{
+    max-width: 1600px !important;
+  }
   .item{
     position: relative;
     img{
@@ -959,7 +965,7 @@ button{outline: none;}
       p{
         color: #fff;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.875rem;
       }
       a{
         font-size: 16px;
@@ -984,5 +990,12 @@ button{outline: none;}
         }
       }
     }
+  }
+}
+
+#error_page{
+  padding: 2rem 0 1rem;
+  h1,h2{
+    color: #f71f1f;
   }
 }

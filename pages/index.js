@@ -15,7 +15,7 @@ function Home({t}) {
   return (
       <MainLayout>
           <section id="main-carousel" className="photo-carousel">
-              <div className="container px-sm-3 px-0" style={{maxWidth: 1800}}>
+              <div className="container px-sm-3 px-0">
                   <MainCarousel/>
               </div>
           </section>
@@ -215,7 +215,7 @@ function Home({t}) {
           </section>
           <section className="photo-carousel">
               <div className="title">Фотографии стоматологии</div>
-              <div className="container px-sm-3 px-0" style={{maxWidth: 1400}}>
+              <div className="container px-sm-3 px-0">
                   <PhotoCarousel/>
               </div>
           </section>

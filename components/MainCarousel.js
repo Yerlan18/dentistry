@@ -19,13 +19,13 @@ export default class PhotoCarousel extends React.Component {
                         </div>
                 </div>),
                 (<div className="item">
-                    <img src="img/main-slider1.png" alt=""/>
+                    <img src="img/main-slider2.png" alt=""/>
                     <div className="caption">
                         <p>Только качественная работа</p>
                     </div>
                 </div>),
                 (<div className="item">
-                    <img src="img/main-slider1.png" alt=""/>
+                    <img src="img/main-slider3.png" alt=""/>
                     <div className="caption">
                         <p>Наши врачи - профессионалы своего дела</p>
                     </div>

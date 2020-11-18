@@ -11,6 +11,8 @@ export default class PhotoCarousel extends React.Component {
                 (<img src="img/slider/slider1.png" />),
                 (<img src="img/slider/slider2.png" />),
                 (<img src="img/slider/slider3.png" />),
+                (<img src="img/slider/slider4.png" />),
+                (<img src="img/slider/slider5.png" />),
             ],
         };
         this.onchange = this.onchange.bind(this);
