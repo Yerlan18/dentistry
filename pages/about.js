@@ -1,4 +1,5 @@
 import {MainLayout} from "../components/MainLayout";
+import Form from "../components/Form";
 
 export default function About() {
     return (
@@ -120,35 +121,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section id="contact-us">
-                <div className="container px-sm-3 px-0">
-                    <div className="row">
-                        <div className="col-12 col-md-10 offset-md-1">
-                            <div className="contact-us">
-                                <img src="img/form-bg.png" alt=""/>
-                                    <div className="form">
-                                        <p>Записаться на прием</p>
-                                        <form>
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" id="fio"
-                                                       placeholder="Ваше ФИО" required/>
-                                            </div>
-                                            <div className="form-group">
-                                                <input type="tel" className="form-control" id="tel"
-                                                       placeholder="Телефон" required/>
-                                            </div>
-                                            <div className="form-group">
-                                                <input type="text" className="form-control" id="date"
-                                                       placeholder="Желаемая дата посещения" required/>
-                                            </div>
-                                            <button type="submit" className="btn-brand">Записаться</button>
-                                        </form>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Form/>
         </MainLayout>
     )
 }

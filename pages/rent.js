@@ -76,25 +76,6 @@ export default function Rent() {
                     </div>
                 </div>
             </section>
-            {/*<div className="modal fade" id="modal-rent" tabIndex="-1">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <button type="button" class="close" data-dismiss="modal"><i class="icon-xs-o-md"></i></button>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span></button>
-                        <div className="modal-body">
-                            <form action="#" method="post" encType="text/plain" className="form">
-                                <h4>Оставьте свою заявку и мы свяжемся с вами</h4>
-                                <div className="form-group">
-                                    <input type="text" className="form-control" id="tel"
-                                           placeholder="Номер телефона/почта" required/>
-                                </div>
-                                <button type="submit" name="submit" className="btn">Оставить заявку</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>*/}
         </MainLayout>
     )
 }

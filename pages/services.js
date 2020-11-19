@@ -1,4 +1,5 @@
 import {MainLayout} from "../components/MainLayout";
+import Form from "../components/Form";
 
 export default function Services() {
     return (
@@ -163,41 +164,7 @@ export default function Services() {
                     </div>
                 </div>
             </section>
-            <section id="contact-us">
-                <div className="container px-sm-3 px-0">
-                    <div className="row">
-                        <div className="col-12 col-md-10 offset-md-1">
-                            <div className="contact-us">
-                                <img src="img/form-bg.png" alt=""/>
-                                <div className="form">
-                                    <p>Записаться на прием</p>
-                                    <form className="contact-form" id="contactForm_1" method="POST">
-                                        <div className="form-group">
-                                            <input type="text" className="form-control" name="fio" id="fio"
-                                                   placeholder="Ваше ФИО" required/>
-                                        </div>
-                                        <div className="form-group">
-                                            <input type="tel" className="form-control" name="tel" id="tel"
-                                                   placeholder="Телефон" required/>
-                                        </div>
-                                        <div className="form-group">
-                                            <input type="text" className="form-control" name="date" id="date"
-                                                   placeholder="Желаемая дата посещения" required/>
-                                        </div>
-                                        <button type="submit" className="btn-brand">
-                                        <span className="_preloader">
-                                            {/*<i class="fas fa-spinner fa-spin fa-fw"></i>*/}
-                                            <span className="sr-only">Loading...</span>
-                                        </span>
-                                            Записаться
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Form/>
         </MainLayout>
-    )
+    );
 }
