@@ -2,8 +2,9 @@ import Carousel, {Dots} from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import * as React from "react";
 import Link from "next/link";
+import {withTranslation} from "../i18n";
 
-export default class PhotoCarousel extends React.Component {
+class MainCarousel extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -12,7 +13,7 @@ export default class PhotoCarousel extends React.Component {
                 (<div className="item">
                     <img src="img/main-slider1.png" alt=""/>
                         <div className="caption">
-                            <p>Полный комплект стоматологических услуг</p>
+                            <p></p>
                             <Link href={'/services#contact-us'}>
                                 <a className="btn-brand">Записаться на прием</a>
                             </Link>
@@ -21,13 +22,13 @@ export default class PhotoCarousel extends React.Component {
                 (<div className="item">
                     <img src="img/main-slider2.png" alt=""/>
                     <div className="caption">
-                        <p>Только качественная работа</p>
+                        <p></p>
                     </div>
                 </div>),
                 (<div className="item">
                     <img src="img/main-slider3.png" alt=""/>
                     <div className="caption">
-                        <p>Наши врачи - профессионалы своего дела</p>
+                        <p></p>
                     </div>
                 </div>),
             ],
@@ -71,3 +72,5 @@ export default class PhotoCarousel extends React.Component {
         );
     }
 }
+
+export default withTranslation('common')(MainCarousel)

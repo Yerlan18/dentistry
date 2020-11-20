@@ -2,12 +2,13 @@ import {MainLayout} from "../components/MainLayout";
 import Button from "react-bootstrap/Button";
 import * as React from "react";
 import Vmodal from "../components/Modal";
+import {withTranslation} from "../i18n";
 
-export default function Rent() {
+function Rent({t}) {
     const [modalShow, setModalShow] = React.useState(false);
     return (
         <MainLayout>
-            <div className="title sub">Аренда оборудования</div>
+            <div className="title sub">{t('header_top_link_2')}</div>
             <section id="products">
                 <div className="container px-sm-3 px-0">
                     <div className="row">
@@ -21,15 +22,15 @@ export default function Rent() {
                                         <div className="pr-name">
                                             Хирургический шовный материал Silk 3-0
                                         </div>
-                                        <div className="pr-price">Цену уточняйте</div>
+                                        <div className="pr-price">{t('product_price')}</div>
                                         <Button className="btn more-btn" onClick={() => setModalShow(true)}>
-                                            Арендовать
+                                            {t('rent_btn')}
                                         </Button>
                                         <Vmodal show={modalShow} onHide={() => setModalShow(false)}/>
                                     </div>
                                 </div>
                                 <div className="product-inner__desc">
-                                    <p>Описание</p>
+                                    <p>{t('rent_desc')}</p>
                                     <span>
                                 THE Graft™ представляет собой натуральную пористую минеральную костную матрицу.
                                 Производится путем удаления всех органических компонентов  из свиной кости.
@@ -79,3 +80,4 @@ export default function Rent() {
         </MainLayout>
     )
 }
+export default withTranslation('common')(Rent)

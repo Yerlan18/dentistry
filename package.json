@@ -12,7 +12,6 @@
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "next": "10.0.1",
-<<<<<<< HEAD
     "next-connect": "^0.9.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -22,14 +21,12 @@
   "devDependencies": {
     "@types/node": "^14.14.8",
     "@types/react": "^16.9.56",
-    "typescript": "^4.0.5"
-=======
+    "typescript": "^4.0.5",
     "next-i18next": "^7.0.1",
     "prop-types": "latest",
     "react": "17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "17.0.1",
     "sass": "^1.29.0"
->>>>>>> 6d15ab1da4ea53be8353b727c3732468370c7218
   }
 }
