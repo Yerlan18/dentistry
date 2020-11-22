@@ -84,17 +84,17 @@ const Header = ({ t }) => {
                                 </span>
                                 </div>
                                 <div>
-                                    <img src="img/icons/phone.png" alt="" className="mr-3" />
+                                    <img src="img/icons/phone.png" alt="" className="mr-3"/>
                                     <span>
                                     +7 777 132 1742
-                                </span>
+                                    </span>
                                     <img src="img/icons/whatsapp.png" alt="" className="whatsapp ml-3"/>
                                 </div>
                                 <div>
                                     <img src="img/icons/gps.png" alt="" className="mr-3"/>
                                     <span>
-                                    пр. Абая, д. 150/230, блок 3, ЖК «Гаухартаc»
-                                </span>
+                                    {t('address')}
+                                    </span>
                                 </div>
                             </div>
                         </div>

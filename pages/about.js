@@ -59,7 +59,7 @@ function About({t}) {
                                     <div>
                                         <span className="idx">Т1</span>
                                         <span className="desc">
-                                    {t('about_eq_inner1_d1')} <br/>
+                                    {t('about_eq_inner2_d1')} <br/>
                                             {t('about_eq_inner2_d2')} <br/>
                                             {t('about_eq_inner2_d3')} <br/>
                                             {t('about_eq_inner2_d4')} <br/>
