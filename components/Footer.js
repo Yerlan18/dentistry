@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {withTranslation} from "../i18n";
+import Link from "next/link";
 
 const Footer = ({t}) => {
     return (
@@ -11,6 +12,9 @@ const Footer = ({t}) => {
                         <div className="row py-3">
                             <div className="col-sm-12 col-md-3 col-lg-3">
                                 <ul className="footer-sitemap">
+                                    <li>
+                                        <Link href={'/#header'}><a>{t('to_begin')}</a></Link>
+                                    </li>
                                     <li>
                                         <a href="">{t('submenu_services')}</a>
                                     </li>

@@ -27,78 +27,76 @@ function Home({t}) {
                           <div className="service-block__inner">
                               <div className="s-wrapper">
                                   <img src="img/services/icon1.png" alt="icon1"/>
-                                      <div className="s-wrapper__title">Ортодонтия</div>
+                                      <div className="s-wrapper__title">{t('service_inner1_title')}</div>
                                       <div className="s-wrapper__desc">
-                                          Выравнивание зубов передовыми
-                                          методами! <br/>
-                                          - Исправление прикуса <br/>
-                                          - Установка металлических и
-                                          керамических брекетов
+                                          {t('service_inner1_d1')} <br/>
+                                          {t('service_inner1_d2')} <br/>
+                                          {t('service_inner1_d3')} <br/>
                                       </div>
                               </div>
                           </div>
                           <div className="service-block__inner">
                               <div className="s-wrapper">
                                   <img src="img/services/icon2.png" alt="icon2"/>
-                                      <div className="s-wrapper__title">Ортопедия</div>
+                                      <div className="s-wrapper__title">{t('service_inner2_title')}</div>
                                       <div className="s-wrapper__desc">
-                                          Научный подход! Быстрое изготовление! <br/>
-                                          - Съемные протезы <br/>
-                                          - Коронки <br/>
-                                          - Виниры на зубы
+                                          {t('service_inner2_d1')} <br/>
+                                          {t('service_inner2_d2')} <br/>
+                                          {t('service_inner2_d3')} <br/>
+                                          {t('service_inner2_d4')}
                                       </div>
                               </div>
                           </div>
                           <div className="service-block__inner">
                               <div className="s-wrapper">
                                   <img src="img/services/icon3.png" alt="icon3"/>
-                                      <div className="s-wrapper__title">Терапия</div>
+                                      <div className="s-wrapper__title">{t('service_inner3_title')}</div>
                                       <div className="s-wrapper__desc">
-                                          Безболезненое лечение и профилактика! <br/>
-                                          - Кариес <br/>
-                                          - Пульпит <br/>
-                                          - Комплексная чистка
+                                          {t('service_inner3_d1')} <br/>
+                                          {t('service_inner3_d2')} <br/>
+                                          {t('service_inner3_d3')} <br/>
+                                          {t('service_inner3_d4')}
                                       </div>
                               </div>
                           </div>
                           <div className="service-block__inner">
                               <div className="s-wrapper">
                                   <img src="img/services/icon4.png" alt="icon4"/>
-                                      <div className="s-wrapper__title">Хирургия</div>
+                                      <div className="s-wrapper__title">{t('service_inner4_title')}</div>
                                       <div className="s-wrapper__desc">
-                                          Лечение и удаление зубов без боли и последствий! <br/>
-                                          - Удаление кисты зуба <br/>
-                                          - Удаление зуба мудрости <br/>
-                                          - Удаление зубов
+                                          {t('service_inner4_d1')} <br/>
+                                          {t('service_inner4_d2')} <br/>
+                                          {t('service_inner4_d3')} <br/>
+                                          {t('service_inner4_d4')}
                                       </div>
                               </div>
                           </div>
                           <div className="service-block__inner">
                               <div className="s-wrapper">
                                   <img src="img/services/icon5.png" alt="icon5"/>
-                                      <div className="s-wrapper__title">Имплантация</div>
+                                      <div className="s-wrapper__title">{t('service_inner5_title')}</div>
                                       <div className="s-wrapper__desc">
-                                          Срок службы зубных имплантатов более 25 лет! <br/>
-                                          - Имплант под ключ <br/>
-                                          - Одноэтапная имплантация <br/>
-                                          - Наращивание костной ткани
+                                          {t('service_inner5_d1')} <br/>
+                                          {t('service_inner5_d2')} <br/>
+                                          {t('service_inner5_d3')} <br/>
+                                          {t('service_inner5_d4')}
                                       </div>
                               </div>
                           </div>
                           <div className="service-block__inner">
                               <div className="s-wrapper">
                                   <img src="img/services/icon6.png" alt="icon6"/>
-                                      <div className="s-wrapper__title">Детская стоматология</div>
+                                      <div className="s-wrapper__title">{t('service_inner6_title')}</div>
                                       <div className="s-wrapper__desc">
-                                          Процедуры без страха и боли! <br/>
-                                          - Лечение молочных зубов <br/>
-                                          - Лечение постоянных зубов <br/>
-                                          - Удаление молочного зуба
+                                          {t('service_inner6_d1')} <br/>
+                                          {t('service_inner6_d2')} <br/>
+                                          {t('service_inner6_d3')} <br/>
+                                          {t('service_inner6_d4')}
                                       </div>
                               </div>
                           </div>
                           <Link href={'/services'}>
-                              <a className="btn-brand">Все виды услуг</a>
+                              <a className="btn-brand">{t('services_more_btn')}</a>
                           </Link>
                       </div>
                   </div>
@@ -112,28 +110,28 @@ function Home({t}) {
                           <div className="adv-block">
                               <div className="adv-block__inner">
                                   <div className="adv-wrapper">
-                                      <div className="adv-wrapper__title">Производство Южная Корея</div>
+                                      <div className="adv-wrapper__title">{t('adv_inner1_text')}</div>
                                       <img src="img/advantages/icon1.png" alt="icon1"/>
                                           <div className="adv-wrapper__desc">
-                                              Технологии, оборудования, медицинские изделия высшего качества
+                                              {t('adv_inner1_desc')}
                                           </div>
                                   </div>
                               </div>
                               <div className="adv-block__inner">
                                   <div className="adv-wrapper">
-                                      <div className="adv-wrapper__title">Компьютерная томография</div>
+                                      <div className="adv-wrapper__title">{t('adv_inner2_text')}</div>
                                       <img src="img/advantages/icon2.png" alt="icon2"/>
                                           <div className="adv-wrapper__desc">
-                                              Не нужно искать диагностический центр для обследования
+                                              {t('adv_inner2_desc')}
                                           </div>
                                   </div>
                               </div>
                               <div className="adv-block__inner">
                                   <div className="adv-wrapper">
-                                      <div className="adv-wrapper__title">Комфортное лечение</div>
+                                      <div className="adv-wrapper__title">{t('adv_inner3_text')}</div>
                                       <img src="img/advantages/icon3.png" alt="icon3"/>
                                           <div className="adv-wrapper__desc">
-                                              В клинике работают анестезиологи с опытом более 10 лет
+                                              {t('adv_inner3_desc')}
                                           </div>
                                   </div>
                               </div>
@@ -151,28 +149,18 @@ function Home({t}) {
                       <div className="col-sm-12 col-md-10 col-lg-6">
                           <div className="about-text">
                               <div className="about-text__top">
-                                  Наша клиника была создана совместно с южно-корейской компанией Osstem Implant,
-                                  занимающей
-                                  ПЯТУЮ строчку во всемирном рейтинге компаний-производителей имплантатов. Основной
-                                  приоритет
-                                  направлен на комфортное лечение с использованием системы южно-корейской
-                                  стоматологической
-                                  клиники Chamchoeun. Специалисты клиники Chamchoeun регулярно проводят обучение нашим
-                                  врачам
-                                  по повышению квалификации.
+                                  {t('adv2_text')}
                               </div>
                               <div className="about-text__bottom">
                                   <p>
-                                      Наши высококвалифицированные врачи предоставляют широкий спектр
-                                      стоматологических услуг, вас окружают заботой и вниманием.
+                                      {t('adv2_desc1')}
                                   </p>
                                   <p>
-                                      Мы используем цифровые 3D технологии.
+                                      {t('adv2_desc2')}
                                   </p>
                                   <p>
-                                      В нашей клинике имеется кабинет рентгенографии, где имеется возможность сделать
-                                      несколько видов рентген-снимков. <br/>
-                                      Мы сделаем все для совершенства ваших улыбок!
+                                      {t('adv2_desc3')} <br/>
+                                      {t('adv2_desc4')}
                                   </p>
                               </div>
                           </div>
@@ -181,7 +169,7 @@ function Home({t}) {
               </div>
           </section>
           <section id="doctors">
-              <div className="title">Наши доктора</div>
+              <div className="title">{t('doctor_title')}</div>
               <div className="doctors">
                   <div className="container px-sm-3 px-0">
                       <div className="row mx-0">
@@ -189,11 +177,9 @@ function Home({t}) {
                               <div className="doctors-block">
                                   <img src="img/doctors/d1.png" alt="doctor1"/>
                                       <div className="mt-3">
-                                          <div className="doctors-block__name">Расстрига Дмитрий Игоревич</div>
-                                          <div className="doctors-block__pos">
-                                              Ортопед, хирург. Образование: Высшее медицинское.
-                                          </div>
-                                          <div className="doctors-block__exp">Опыт работы: 5 лет.</div>
+                                          <div className="doctors-block__name">{t('doctor_p1_name')}</div>
+                                          <div className="doctors-block__pos">{t('doctor_p1_pos')}</div>
+                                          <div className="doctors-block__exp">{t('doctor_p1_exp')}</div>
                                       </div>
                               </div>
                           </div>
@@ -201,11 +187,9 @@ function Home({t}) {
                               <div className="doctors-block">
                                   <img src="img/doctors/d2.png" alt="doctor2"/>
                                       <div className="mt-3">
-                                          <div className="doctors-block__name">Ким Людмила Геннадьевна</div>
-                                          <div className="doctors-block__pos">
-                                              Терапевт. Образование: высшее медицинское.
-                                          </div>
-                                          <div className="doctors-block__exp">Опыт работы: 20 лет.</div>
+                                          <div className="doctors-block__name">{t('doctor_p2_name')}</div>
+                                          <div className="doctors-block__pos">{t('doctor_p2_pos')}</div>
+                                          <div className="doctors-block__exp">{t('doctor_p2_exp')}</div>
                                       </div>
                               </div>
                           </div>
@@ -214,7 +198,7 @@ function Home({t}) {
               </div>
           </section>
           <section className="photo-carousel">
-              <div className="title">Фотографии стоматологии</div>
+              <div className="title">{t('photo_title')}</div>
               <div className="container px-sm-3 px-0">
                   <PhotoCarousel/>
               </div>

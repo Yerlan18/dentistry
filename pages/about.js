@@ -1,63 +1,53 @@
 import {MainLayout} from "../components/MainLayout";
 import Form from "../components/Form";
+import {withTranslation} from "../i18n";
+import React from "react";
 
-export default function About() {
+function About({t}) {
     return (
         <MainLayout>
-            <div className="title sub">О нас</div>
+            <div className="title sub">{t('submenu_about')}</div>
             <section id="about-main">
                 <div className="container px-sm-3 px-0">
                     <div className="row">
                         <div className="col-12">
                             <p>
-                                Наша клиника была создана совместно с южно-корейской компанией Osstem Implant,
-                                занимающей ПЯТУЮ строчку <br/>
-                                во всемирном рейтинге компаний-производителей имплантатов.
+                                {t('about_p1')}<br/>
+                                {t('about_p2')}
                             </p>
                             <p>
-                                Основной приоритет направлен на комфортное лечение с использованием системы
-                                южно-корейской <br/>
-                                стоматологической клиники Chamchoeun. Специалисты клиники Chamchoeun регулярно проводят
-                                обучение <br/>
-                                нашим врачам по повышению квалификации с целью оказания максимально качественной помощи
-                                Вам.
+                                {t('about_p3')}<br/>
+                                {t('about_p4')}<br/>
+                                {t('about_p5')}
                             </p>
                             <br/>
                             <p>
-                                Наши высококвалифицированные врачи предоставляют широкий спектр стоматологических
-                                услуг, вас <br/>
-                                окружают заботой и вниманием.
+                                {t('about_p6')}<br/>
+                                {t('about_p7')}
                             </p>
-                            <p>
-                                Мы используем цифровые 3D технологии.
-                            </p>
-                            <p>
-                                В нашей клинике имеется кабинет рентгенографии, где имеется возможность сделать
-                                несколько видов рентген-снимков.
-                            </p>
-                            <p>
-                                Мы сделаем все для совершенства ваших улыбок!
-                            </p>
+                            <p>{t('about_p8')}</p>
+                            <p>{t('about_p9')}</p>
+                            <p>{t('about_p10')}</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <div className="title sub">Оборудование в стоматологии</div>
+            <div className="title sub">{t('about_eq_title')}</div>
             <section id="equipment">
                 <div className="container px-sm-3 px-0">
                     <div className="row">
                         <div className="eqm">
                             <div className="eqm-inner">
                                 <div className="wrapper">
-                                    <p>Стоматологическая установка</p>
+                                    <p>{t('about_eq_inner1_n')}</p>
                                     <div>
                                         <span className="idx">K3</span>
                                         <span className="desc">
-                                    Технологичные решения <br/>
-                                    для точной операции <br/>
-                                    Максимальный <br/>
-                                    комфорт и удобство <br/>
-                                    пациента и врача
+                                    {t('about_eq_inner1_d1')} <br/>
+                                    {t('about_eq_inner1_d2')} <br/>
+                                    {t('about_eq_inner1_d3')} <br/>
+                                    {t('about_eq_inner1_d4')} <br/>
+                                    {t('about_eq_inner1_d5')}
                                 </span>
                                     </div>
                                     <img src="img/eqm/eqm1.png" alt="Оборудование 1"/>
@@ -65,15 +55,15 @@ export default function About() {
                             </div>
                             <div className="eqm-inner">
                                 <div className="wrapper">
-                                    <p>3D рентген аппарат</p>
+                                    <p>{t('about_eq_inner2_n')}</p>
                                     <div>
                                         <span className="idx">Т1</span>
                                         <span className="desc">
-                                    Широкий выбор зоны <br/>
-                                    сканирования <br/>
-                                    Легко задавать пол, <br/>
-                                    возраст, область <br/>
-                                    сканирования
+                                    {t('about_eq_inner2_d1')} <br/>
+                                            {t('about_eq_inner2_d2')} <br/>
+                                            {t('about_eq_inner2_d3')} <br/>
+                                            {t('about_eq_inner2_d4')} <br/>
+                                            {t('about_eq_inner2_d5')}
                                 </span>
                                     </div>
                                     <img src="img/eqm/eqm2.png" alt="Оборудование 2"/>
@@ -85,35 +75,35 @@ export default function About() {
             </section>
             <section id="advantages">
                 <div className="adv extra">
-                    <div className="title sub">Наши преимущества</div>
+                    <div className="title sub">{t('adv_title')}</div>
                     <div className="container px-sm-3 px-0 mt-4">
                         <div className="row mx-0">
                             <div className="adv-block">
                                 <div className="adv-block__inner">
                                     <div className="adv-wrapper">
-                                        <div className="adv-wrapper__title">Производство Южная Корея</div>
+                                        <div className="adv-wrapper__title">{t('adv_inner1_text')}</div>
                                         <img src="img/advantages/icon1.png" alt="icon1"/>
-                                            <div className="adv-wrapper__desc">
-                                                Технологии, оборудования, медицинские изделия высшего качества
-                                            </div>
+                                        <div className="adv-wrapper__desc">
+                                            {t('adv_inner1_desc')}
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="adv-block__inner">
                                     <div className="adv-wrapper">
-                                        <div className="adv-wrapper__title">Компьютерная томография</div>
+                                        <div className="adv-wrapper__title">{t('adv_inner2_text')}</div>
                                         <img src="img/advantages/icon2.png" alt="icon2"/>
-                                            <div className="adv-wrapper__desc">
-                                                Не нужно искать диагностический центр для обследования
-                                            </div>
+                                        <div className="adv-wrapper__desc">
+                                            {t('adv_inner2_desc')}
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="adv-block__inner">
                                     <div className="adv-wrapper">
-                                        <div className="adv-wrapper__title">Комфортное лечение</div>
+                                        <div className="adv-wrapper__title">{t('adv_inner3_text')}</div>
                                         <img src="img/advantages/icon3.png" alt="icon3"/>
-                                            <div className="adv-wrapper__desc">
-                                                В клинике работают анестезиологи с опытом более 10 лет
-                                            </div>
+                                        <div className="adv-wrapper__desc">
+                                            {t('adv_inner3_desc')}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -125,3 +115,4 @@ export default function About() {
         </MainLayout>
     )
 }
+export default withTranslation('common')(About)

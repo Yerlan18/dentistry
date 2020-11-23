@@ -79,22 +79,22 @@ const Header = ({ t }) => {
                                 <div>
                                     <img src="img/icons/time.png" alt="" className="mr-3"/>
                                     <span>
-                                    Пн-пт 10:00 - 21:00 <br/>
-                                    Сб-вс 11:00 - 20:00
+                                    {t('footer_working_hours_date1')} 10:00 - 21:00 <br/>
+                                    {t('footer_working_hours_date2')} 11:00 - 20:00
                                 </span>
                                 </div>
                                 <div>
-                                    <img src="img/icons/phone.png" alt="" className="mr-3" />
+                                    <img src="img/icons/phone.png" alt="" className="mr-3"/>
                                     <span>
                                     +7 777 132 1742
-                                </span>
+                                    </span>
                                     <img src="img/icons/whatsapp.png" alt="" className="whatsapp ml-3"/>
                                 </div>
                                 <div>
                                     <img src="img/icons/gps.png" alt="" className="mr-3"/>
                                     <span>
-                                    пр. Абая, д. 150/230, блок 3, ЖК «Гаухартаc»
-                                </span>
+                                    {t('address')}
+                                    </span>
                                 </div>
                             </div>
                         </div>

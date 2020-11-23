@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import {withTranslation} from "../i18n";
 
 class Form extends React.Component{
     state = {
@@ -74,4 +75,4 @@ class Form extends React.Component{
         console.log(this.state)
     }*/
 }
-export default Form
+export default withTranslation('common')(Form)
