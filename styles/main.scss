@@ -1003,6 +1003,7 @@ button{outline: none;}
 .admin-wrapper{
   display: flex;
   height: 100vh;
+  min-width: 992px;
   main{
     padding: 2rem;
 
@@ -1045,6 +1046,7 @@ button{outline: none;}
           color: rgba(255,255,255,.5);
           text-decoration: none!important;
           padding: 15px 20px;
+          cursor: pointer;
           &:hover{
             color: #fff;
             background-color: #2d363f;
@@ -1055,6 +1057,17 @@ button{outline: none;}
         }
       }
     }
+  }
+}
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
   }
 }
 

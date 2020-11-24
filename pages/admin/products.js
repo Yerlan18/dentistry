@@ -10,16 +10,12 @@ export default function Products() {
             <Table striped bordered>
                 <thead>
                 <tr>
-                    <th></th>
                     <th>Название</th>
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>
-                        <Link href={''}><a>Изменить</a></Link>
-                    </td>
                     <td>Костный материал THE Graft Granule (0,5g)</td>
                     <td>
                         <Link href={''}><a>Удалить</a></Link>

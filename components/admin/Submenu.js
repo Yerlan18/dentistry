@@ -1,8 +1,15 @@
 import {useRouter} from "next/router";
 import Link from "next/link";
+import AuthService from "../../services/auth.service"
 
 const Submenu = () => {
     const router = useRouter();
+
+    function logout() {
+        AuthService.logout()
+        router.push('/login');
+    }
+
     return (
         <>
             <section id="left-menu">
@@ -17,7 +24,7 @@ const Submenu = () => {
                         <Link href={'/admin/requests'}><a>Заявки</a></Link>
                     </li>
                     <li>
-                        <Link href=""><a>Выход</a></Link>
+                        <a onClick={logout}>Выход</a>
                     </li>
                 </ul>
             </section>

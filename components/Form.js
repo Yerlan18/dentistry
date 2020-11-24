@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import {withTranslation} from "../i18n";
+import PropTypes from "prop-types";
 
 class Form extends React.Component{
     state = {
@@ -70,9 +71,13 @@ class Form extends React.Component{
             </section>
         )
     }
-
-    /*componentDidUpdate() {
-        console.log(this.state)
-    }*/
 }
+Form.getInitialProps = async () => ({
+    namespacesRequired: ['common'],
+})
+
+Form.propTypes = {
+    t: PropTypes.func.isRequired,
+}
+
 export default withTranslation('common')(Form)
