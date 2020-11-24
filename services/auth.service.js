@@ -10,9 +10,10 @@ class AuthService {
                 password
             })
             .then(response => {
-                if (response.data.accessToken) {
-                    localStorage.setItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTYwNjA5ODcyMX0.LVUf9mQ-MdMoOGLRxHpoOIsbcXStYTGarcZuwdN7wuY",
-                        JSON.stringify(response.data));
+                console.log(response.data.authToken);
+                if (response.data.authToken) {
+                    localStorage.setItem('authtoken',
+                        response.data.authToken);
                 }
 
                 return response.data;
@@ -20,11 +21,11 @@ class AuthService {
     }
 
     logout() {
-        localStorage.removeItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTYwNjA5ODcyMX0.LVUf9mQ-MdMoOGLRxHpoOIsbcXStYTGarcZuwdN7wuY");
+        localStorage.removeItem('authtoken');
     }
 
     getCurrentUser() {
-        return JSON.parse(localStorage.getItem('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTYwNjA5ODcyMX0.LVUf9mQ-MdMoOGLRxHpoOIsbcXStYTGarcZuwdN7wuY'));
+        return JSON.parse(localStorage.getItem('authtoken'));
     }
 }
 

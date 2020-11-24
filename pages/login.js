@@ -45,7 +45,6 @@ class Login extends React.Component{
 
         AuthService.login(this.state.username, this.state.password).then(
             () => {
-                // this.props.history.push("/admin")
                 window.location.href = "/admin"
                // router.push("/admin")
             },
@@ -53,14 +52,6 @@ class Login extends React.Component{
                 console.log(error)
             }
         )
-
-        /*axios.post('http://localhost:3000/api/login', this.state)
-            .then(response => {
-                localStorage.setItem("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTYwNjA5ODcyMX0.LVUf9mQ-MdMoOGLRxHpoOIsbcXStYTGarcZuwdN7wuY", response.token)
-            })
-            .catch(error => {
-                console.log(error)
-            })*/
     }
 
     render() {

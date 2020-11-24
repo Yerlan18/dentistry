@@ -1,6 +1,7 @@
 import AdminLayout from "../../components/admin/AdminLayout";
 import Table from "react-bootstrap/Table";
-import Link from "next/link";
+
+import requestService from "../../services/request.service"
 
 export default function Requests() {
     return (
@@ -25,3 +26,4 @@ export default function Requests() {
         </AdminLayout>
     )
 }
+
