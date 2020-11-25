@@ -14,14 +14,14 @@ const Submenu = () => {
         <>
             <section id="left-menu">
                 <ul>
-                    <li className={router.pathname === "/admin/rent" ? "active" : ""}>
-                        <Link href={'/admin/rent'}><a>Аренда</a></Link>
+                    <li className={router.pathname === "/admin/requests" ? "active" : ""}>
+                        <Link href={'/admin/requests'}><a>Заявки</a></Link>
                     </li>
                     <li className={router.pathname === "/admin/products" ? "active" : ""}>
                         <Link href={'/admin/products'}><a>Продукция</a></Link>
                     </li>
-                    <li className={router.pathname === "/admin/requests" ? "active" : ""}>
-                        <Link href={'/admin/requests'}><a>Заявки</a></Link>
+                    <li className={router.pathname === "/admin/rent" ? "active" : ""}>
+                        <Link href={'/admin/rent'}><a>Аренда</a></Link>
                     </li>
                     <li>
                         <a onClick={logout}>Выход</a>

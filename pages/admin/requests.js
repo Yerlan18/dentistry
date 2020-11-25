@@ -1,29 +1,60 @@
 import AdminLayout from "../../components/admin/AdminLayout";
 import Table from "react-bootstrap/Table";
+// import requestService from "../../services/request.service"
+import React from "react";
+import axios from "axios";
 
-import requestService from "../../services/request.service"
+class Requests extends React.Component {
 
-export default function Requests() {
-    return (
-        <AdminLayout>
-            <h1>Requests</h1>
-            <Table striped bordered>
-                <thead>
-                <tr>
-                    <th>ФИО</th>
-                    <th>Телефон</th>
-                    <th>Желаемая дата</th>
+    state = {
+        requests: []
+    }
+
+    componentDidMount() {
+        const API_URL = "http://localhost:3000/api/getAppointments";
+        axios.get(API_URL, {headers: {Authorization: localStorage.getItem('authtoken')}}).then(
+            response => {
+                const requests = response.data;
+                this.setState({requests})
+                console.log('response',requests)
+            }
+        )
+    }
+
+    renderTableData(){
+        return this.state.requests.map((req, index) => {
+            return (
+                <tr key={index}>
+                    <td>{index+1}</td>
+                    <td>{req.FIO}</td>
+                    <td>{req.PhoneNumber}</td>
+                    <td>{req.VisitDate}</td>
                 </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Сыдыков Дархан</td>
-                    <td>+7 (777) 777 7777</td>
-                    <td>Послезавтра</td>
-                </tr>
-                </tbody>
-            </Table>
-        </AdminLayout>
-    )
+            )
+        })
+    }
+
+    render() {
+        return (
+            <AdminLayout>
+                <h1>Заявки</h1>
+                <Table striped bordered>
+                    <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>ФИО</th>
+                        <th>Телефон</th>
+                        <th>Желаемая дата</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderTableData()}
+                    </tbody>
+                </Table>
+            </AdminLayout>
+        )
+    }
 }
+
+export default Requests
 

@@ -31,7 +31,7 @@ const Header = ({ t }) => {
                                     </li>
                                     <li className="nav-item">
                                             <span className="nav-link">
-                                                <a href="#">{t('header_top_link_3')}</a>
+                                                <a href="http://unionp.kz/" target="_blank">{t('header_top_link_3')}</a>
                                             </span>
                                     </li>
                                 </ul>

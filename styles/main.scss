@@ -349,8 +349,9 @@ button{outline: none;}
     color: #fff;
   }
   &-links{
-    color: $orange-color;
-
+    a{
+      color: $orange-color !important;
+    }
   }
 }
 
@@ -655,6 +656,18 @@ button{outline: none;}
       .btn-brand{
         display: flex;
         margin: 3rem auto 1rem;
+      }
+      #preloader{
+        display: none;
+        margin: 3rem auto 1rem;
+        img{
+          width: 45px;
+          display: flex;
+          margin: auto;
+        }
+      }
+      #msg{
+        display: none;
       }
     }
     @media screen and (max-width: 475px) {

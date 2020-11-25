@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Products() {
     return (
         <AdminLayout>
-            <h1>Products</h1>
-            <Link href={''}><a className='btn btn-success'>Добавить</a></Link>
+            <h1>Продукция</h1>
+            <Link href={'/admin/products/add'}><a className='btn btn-success'>Добавить</a></Link>
             <Table striped bordered>
                 <thead>
                 <tr>

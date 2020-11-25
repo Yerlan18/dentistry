@@ -45,7 +45,7 @@ class Login extends React.Component{
 
         AuthService.login(this.state.username, this.state.password).then(
             () => {
-                window.location.href = "/admin"
+                window.location.href = "/admin/requests"
                // router.push("/admin")
             },
             error => {
@@ -88,20 +88,3 @@ class Login extends React.Component{
 }
 
 export default Login
-
-/*export default function Login() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-
-    state = {
-        fio: '',
-        phoneNumber: '',
-        visitDate: ''
-    }
-
-
-
-    return (
-
-    );
-}*/

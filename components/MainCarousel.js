@@ -1,6 +1,6 @@
 import Carousel, {Dots} from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import * as React from "react";
+import React from "react";
 import Link from "next/link";
 import {withTranslation} from "../i18n";
 
@@ -13,7 +13,7 @@ class MainCarousel extends React.Component {
                 (<div className="item">
                     <img src="img/main-slider1.png" alt=""/>
                         <div className="caption">
-                            <p></p>
+                            <p>Полный комплект стоматологических услуг</p>
                             <Link href={'/services#contact-us'}>
                                 <a className="btn-brand">Записаться на прием</a>
                             </Link>
@@ -22,13 +22,13 @@ class MainCarousel extends React.Component {
                 (<div className="item">
                     <img src="img/main-slider2.png" alt=""/>
                     <div className="caption">
-                        <p></p>
+                        <p>Только качественная работа</p>
                     </div>
                 </div>),
                 (<div className="item">
                     <img src="img/main-slider3.png" alt=""/>
                     <div className="caption">
-                        <p></p>
+                        <p>Наши врачи - профессионалы своего дела</p>
                     </div>
                 </div>),
             ],
