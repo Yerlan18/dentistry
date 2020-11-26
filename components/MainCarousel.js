@@ -3,35 +3,13 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import React from "react";
 import Link from "next/link";
 import {withTranslation} from "../i18n";
+import PropTypes from "prop-types";
 
 class MainCarousel extends React.Component {
     constructor() {
         super();
         this.state = {
-            value: 0,
-            slides: [
-                (<div className="item">
-                    <img src="img/main-slider1.png" alt=""/>
-                        <div className="caption">
-                            <p>Полный комплект стоматологических услуг</p>
-                            <Link href={'/services#contact-us'}>
-                                <a className="btn-brand">Записаться на прием</a>
-                            </Link>
-                        </div>
-                </div>),
-                (<div className="item">
-                    <img src="img/main-slider2.png" alt=""/>
-                    <div className="caption">
-                        <p>Только качественная работа</p>
-                    </div>
-                </div>),
-                (<div className="item">
-                    <img src="img/main-slider3.png" alt=""/>
-                    <div className="caption">
-                        <p>Наши врачи - профессионалы своего дела</p>
-                    </div>
-                </div>),
-            ],
+            value: 0
         };
         this.onchange = this.onchange.bind(this);
     }
@@ -46,7 +24,7 @@ class MainCarousel extends React.Component {
             <div>
                 <Carousel
                     value={this.state.value}
-                    slides={this.state.slides}
+                    // slides={this.state.slides}
                     onChange={this.onchange}
                     /*autoPlay={3000}
                     animationSpeed={1500}*/
@@ -66,11 +44,41 @@ class MainCarousel extends React.Component {
                             clickToChange: false,
                         },
                     }}
-                />
-                <Dots value={this.state.value} onChange={this.onchange} number={this.state.slides.length} />
+                >
+                    <div className="item">
+                        <img src="img/main-slider1.png" alt=""/>
+                        <div className="caption">
+                            <p>{this.props.t('main_slider1')}</p>
+                            <Link href={'/services#contact-us'}>
+                                <a className="btn-brand">{this.props.t('form_title')}</a>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <img src="img/main-slider2.png" alt=""/>
+                        <div className="caption">
+                            <p>{this.props.t('main_slider2')}</p>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <img src="img/main-slider3.png" alt=""/>
+                        <div className="caption">
+                            <p>{this.props.t('main_slider3')}</p>
+                        </div>
+                    </div>
+                </Carousel>
+                <Dots value={this.state.value} onChange={this.onchange} number={3} />
             </div>
         );
     }
+}
+
+MainCarousel.getInitialProps = async () => ({
+    namespacesRequired: ['common'],
+})
+
+MainCarousel.propTypes = {
+    t: PropTypes.func.isRequired,
 }
 
 export default withTranslation('common')(MainCarousel)

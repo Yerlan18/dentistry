@@ -20,9 +20,9 @@ const Submenu = () => {
                     <li className={router.pathname === "/admin/products" ? "active" : ""}>
                         <Link href={'/admin/products'}><a>Продукция</a></Link>
                     </li>
-                    <li className={router.pathname === "/admin/rent" ? "active" : ""}>
+                    {/*<li className={router.pathname === "/admin/rent" ? "active" : ""}>
                         <Link href={'/admin/rent'}><a>Аренда</a></Link>
-                    </li>
+                    </li>*/}
                     <li>
                         <a onClick={logout}>Выход</a>
                     </li>
