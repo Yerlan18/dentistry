@@ -11,7 +11,7 @@ class Requests extends React.Component {
     }
 
     componentDidMount() {
-        const API_URL = "http://localhost:3000/api/getAppointments";
+        const API_URL = "http://uniondental.kz/api/getAppointments";
         axios.get(API_URL, {headers: {Authorization: localStorage.getItem('authtoken')}}).then(
             response => {
                 const requests = response.data;

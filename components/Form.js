@@ -22,7 +22,7 @@ class Form extends React.Component{
         console.log(this.state)
         document.getElementById('btn').style.display = "none";
         document.getElementById('preloader').style.display = "block";
-        axios.post('http://localhost:3000/api/appointment', this.state)
+        axios.post('http://uniondental.kz/api/appointment', this.state)
             .then(response => {
                 console.log(response)
                 document.getElementById('preloader').style.display = "none";
