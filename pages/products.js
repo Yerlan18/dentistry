@@ -18,7 +18,7 @@ function Products({t}) {
                                         Хирургический шовный материал Silk 3-0
                                     </div>
                                     <div className="pr-price">{t('product_price')}</div>
-                                    <a href="" className="btn more-btn">{t('product_more_btn')}</a>
+                                    <a href="http://unionp.kz/136-Shovnye_materialy" className="btn more-btn">{t('product_more_btn')}</a>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ function Products({t}) {
                                         Костный материал THE Graft Granule (0,5g)
                                     </div>
                                     <div className="pr-price">Цену уточняйте</div>
-                                    <a href="" className="btn more-btn">Подробнее</a>
+                                    <a href="http://unionp.kz/137-Kostnye_materialy" className="btn more-btn">Подробнее</a>
                                 </div>
                             </div>
                         </div>

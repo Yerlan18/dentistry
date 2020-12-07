@@ -24,11 +24,11 @@ const Header = ({ t }) => {
                                                 <Link href={'/'}>{t('header_top_link_1')}</Link>
                                             </span>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                             <span className={router.pathname === "/rent" ? "active" : ""}>
                                                 <Link href={'/rent'}>{t('header_top_link_2')}</Link>
                                             </span>
-                                    </li>
+                                    </li> */}
                                     <li className="nav-item">
                                             <span className="nav-link">
                                                 <a href="http://unionp.kz/" target="_blank">{t('header_top_link_3')}</a>
