@@ -32,8 +32,8 @@ const Footer = ({t}) => {
                                         {t('footer_working_hours')}
                                     </div>
                                     <div className="col-6 mb-4 pr-0 pr-sm-3">
-                                        {t('footer_working_hours_date1')} 10:00 - 21:00 <br/>
-                                        {t('footer_working_hours_date2')} 11:00 - 20:00
+                                        {t('footer_working_hours_date1')} 09:00 - 18:00 <br/>
+                                        {t('footer_working_hours_date2')} 10:00 - 16:00
                                     </div>
                                     <div className="col-6 mb-4 pl-0 pl-sm-3">
                                         Телефон

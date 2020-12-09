@@ -229,13 +229,13 @@ function Services({t}) {
                         <div className="sp-wrapper">
                             <div className="sp-wrapper__inner">
                                 <div className="name">{t('service_pr_n16')}</div>
-                                <div className="price">1500</div>
+                                <div className="price">2000</div>
                             </div>
                         </div>
                         <div className="sp-wrapper">
                             <div className="sp-wrapper__inner">
                                 <div className="name">{t('service_pr_n17')}</div>
-                                <div className="price">2500</div>
+                                <div className="price">3000</div>
                             </div>
                         </div>
                         <div className="sp-wrapper">
@@ -247,13 +247,13 @@ function Services({t}) {
                         <div className="sp-wrapper">
                             <div className="sp-wrapper__inner">
                                 <div className="name">{t('service_pr_n19')}</div>
-                                <div className="price">1000</div>
+                                <div className="price">2000</div>
                             </div>
                         </div>
                         <div className="sp-wrapper">
                             <div className="sp-wrapper__inner">
                                 <div className="name">{t('service_pr_n20')}</div>
-                                <div className="price">2000</div>
+                                <div className="price">4000</div>
                             </div>
                         </div>
                         <div className="sp-wrapper">
@@ -277,7 +277,7 @@ function Services({t}) {
                         <div className="sp-wrapper">
                             <div className="sp-wrapper__inner">
                                 <div className="name">{t('service_pr_n24')}</div>
-                                <div className="price">4500</div>
+                                <div className="price">2000</div>
                             </div>
                         </div>
                         <div className="sp-wrapper">
@@ -332,6 +332,198 @@ function Services({t}) {
                             <div className="sp-wrapper__inner">
                                 <div className="name">{t('service_pr_n33')}</div>
                                 <div className="price">2500</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n34')}</div>
+                                <div className="price">5000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n35')}</div>
+                                <div className="price">2000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n36')}</div>
+                                <div className="price">5000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n37')}</div>
+                                <div className="price">8000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n38')}</div>
+                                <div className="price">15000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n39')}</div>
+                                <div className="price">2000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n40')}</div>
+                                <div className="price">1000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n41')}</div>
+                                <div className="price">1000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n42')}</div>
+                                <div className="price">15000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n43')}</div>
+                                <div className="price">60000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n44')}</div>
+                                <div className="price">150000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n45')}</div>
+                                <div className="price">25000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n46')}</div>
+                                <div className="price">60000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n47')}</div>
+                                <div className="price">75000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n48')}</div>
+                                <div className="price">20000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n49')}</div>
+                                <div className="price">20000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n50')}</div>
+                                <div className="price">2000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n51')}</div>
+                                <div className="price">40000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n52')}</div>
+                                <div className="price">1000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n53')}</div>
+                                <div className="price">10000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n54')}</div>
+                                <div className="price">15000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n55')}</div>
+                                <div className="price">5000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n56')}</div>
+                                <div className="price">85000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n57')}</div>
+                                <div className="price">75000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n58')}</div>
+                                <div className="price">7500</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n59')}</div>
+                                <div className="price">3000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n60')}</div>
+                                <div className="price">5000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n61')}</div>
+                                <div className="price">1000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n62')}</div>
+                                <div className="price">1000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n63')}</div>
+                                <div className="price">4000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n64')}</div>
+                                <div className="price">10000</div>
+                            </div>
+                        </div>
+                        <div className="sp-wrapper">
+                            <div className="sp-wrapper__inner">
+                                <div className="name">{t('service_pr_n65')}</div>
+                                <div className="price">25000</div>
                             </div>
                         </div>
                     </div>
