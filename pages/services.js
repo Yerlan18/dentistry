@@ -432,12 +432,6 @@ function Services({t}) {
                         </div>
                         <div className="sp-wrapper">
                             <div className="sp-wrapper__inner">
-                                <div className="name">{t('service_pr_n50')}</div>
-                                <div className="price">2000</div>
-                            </div>
-                        </div>
-                        <div className="sp-wrapper">
-                            <div className="sp-wrapper__inner">
                                 <div className="name">{t('service_pr_n51')}</div>
                                 <div className="price">40000</div>
                             </div>
