@@ -16,7 +16,7 @@ function Rent({t}) {
                             <div className="product-inner rent">
                                 <div className="d-flex">
                                     <div className="product-inner__left">
-                                        <img src="img/equipment/tc1.png" alt="Продукт1"/>
+                                        <img src="img/equipment/tcrent1.png" alt="Продукт1"/>
                                     </div>
                                     <div className="product-inner__right">
                                         <div className="pr-name">
