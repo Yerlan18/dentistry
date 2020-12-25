@@ -80,7 +80,7 @@ const Header = ({ t }) => {
                                     <img src="img/icons/time.png" alt="" className="mr-3"/>
                                     <span>
                                     {t('footer_working_hours_date1')} 09:00 - 18:00 <br/>
-                                    {t('footer_working_hours_date2')} 10:00 - 16:00
+                                    {t('footer_working_hours_date2')} 09:00 - 16:00
                                 </span>
                                 </div>
                                 <div>

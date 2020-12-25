@@ -119,14 +119,14 @@ function Services({t}) {
                             <div className="ct-wrapper">
                                 <img src="img/services/snapshot2.png" alt="Снимок2"/>
                                 <div className="ct-wrapper__name">{t('service_ct_desc2')}</div>
-                                <div className="ct-wrapper__price">3000тг</div>
+                                <div className="ct-wrapper__price">5000тг</div>
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
                             <div className="ct-wrapper">
                                 <img src="img/services/snapshot3.png" alt="Снимок3"/>
                                 <div className="ct-wrapper__name">{t('service_ct_desc3')}</div>
-                                <div className="ct-wrapper__price">3000тг</div>
+                                <div className="ct-wrapper__price">7500тг</div>
                             </div>
                         </div>
                     </div>
